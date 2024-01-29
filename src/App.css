@@ -1,0 +1,92 @@
+h1{
+  text-align: center;
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+input[type="text"]{
+  background-color: #0a0a0a;
+  border: 2px solid #333333;
+  width: 550px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  color: #fff;
+  font-family: 'Vercetti';
+  font-size: 16px;
+}
+.light input[type="text"]{
+  background-color: #fff;
+  border: 2px solid #ccc;
+  color: #000;
+}
+input[type="text"]:focus{
+  outline: none;
+  border: 2px solid #0084ff;
+  filter: drop-shadow(0 3px 7px #0084ff77);
+  -webkit-filter: drop-shadow(0 3px 7px #0084ff77);
+}
+.commandBubble{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  margin-top: 24px;
+  width: 500px;
+  border: 2px solid #333333;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  background-color: #0f0f0f;
+  transition: transform 0.2s, filter 0.27s;
+  -webkit-transition: transform 0.2s, filter 0.27s;
+  -moz-transition: transform 0.2s, filter 0.27s;
+  -ms-transition: transform 0.2s, filter 0.27s;
+  -o-transition: transform 0.2s, filter 0.27s;
+  cursor: pointer;
+}
+.commandBubble:hover{
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  filter: drop-shadow(0 3px 7px #0084ff77);
+  -webkit-filter: drop-shadow(0 3px 7px #0084ff77);
+}
+.light .commandBubble{
+  background-color: #f3f6fc;
+  border-color: #ccc;
+}
+.commandBubble h3{
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  line-height: 100%;
+}
+.commandBubble p{
+  font-size: 14px;
+  font-family: 'Vercetti';
+}
+
+.commandBubble h3 span{
+  font-size: 13px;
+  color: #000;
+  margin-left: 8px;
+  background-color: #67ff67;
+  padding: 2px 5px;
+  line-height: 100%;
+  font-family: 'Vercetti';
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
