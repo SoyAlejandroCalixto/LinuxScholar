@@ -46,6 +46,11 @@ h1 span{
   border-right: none;
   background-color: #0f0f0f;
 }
+.light .commandPromptContainer>span{
+  background-color: #f3f6fc;
+  border: 2px solid #ccc;
+  border-right: none;
+}
 input[type="text"]{
   background-color: #0a0a0a;
   border: 2px solid #333333;
