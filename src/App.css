@@ -2,7 +2,49 @@ h1{
   text-align: center;
   font-size: 57px;
   font-weight: 700;
+  margin-top: 230px;
   margin-bottom: 24px;
+}
+h1 span{
+  background: linear-gradient(90deg,#d38b7e,#9e7cb7,#6186d1);
+  background-size: 200%;
+  background-position: left;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: h1_grad_anim;
+  -webkit-animation: h1_grad_anim;
+  animation-duration: 2.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes h1_grad_anim{
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+.commandPromptContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commandPromptContainer>span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 10px;
+  border-radius: 16px 0 0 16px;
+  -webkit-border-radius: 16px 0 0 16px;
+  -moz-border-radius: 16px 0 0 16px;
+  -ms-border-radius: 16px 0 0 16px;
+  -o-border-radius: 16px 0 0 16px;
+  border: 2px solid #333333;
+  border-right: none;
+  background-color: #0f0f0f;
 }
 input[type="text"]{
   background-color: #0a0a0a;
@@ -10,11 +52,11 @@ input[type="text"]{
   width: 550px;
   height: 40px;
   padding: 10px;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
+  border-radius: 0 16px 16px 0;
+  -webkit-border-radius: 0 16px 16px 0;
+  -moz-border-radius: 0 16px 16px 0;
+  -ms-border-radius: 0 16px 16px 0;
+  -o-border-radius: 0 16px 16px 0;
   color: #fff;
   font-family: 'Vercetti';
   font-size: 16px;

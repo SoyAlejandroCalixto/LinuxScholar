@@ -1,12 +1,14 @@
 import React from "react"
 import './essentials.css'
 import { appContext } from "../App"
-import { Moon_svg, Sun_svg } from "../svg"
+import { Moon_svg, Sun_svg, Term_svg, Github_svg } from "../svg"
 
 export function Header(props){
 
     return (
         <header>
+            <Term_svg/>
+            <a href="https://github.com/SoyAlejandroCalixto/LinuxScholar" target="_blank" rel="noreferrer"><Github_svg/></a>
             <ThemeSwitch/>
         </header>
     )
